@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Introduction
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+The task of [entity linking](https://en.wikipedia.org/wiki/Entity_linking) is to link entity mentions in text to specific identifiers from a knowledge base. To perform entity linking, two sub-tasks are normally required: (1) predicting named entity mentions in text, (2) linking those entity mentions to entities in a knowledge base. It appears to be common to assume that (1) is given, and evaluate a system on (2) alone. Overall performance, however, is clearly dependent on doing well in both steps.
 
-Check out the content pages bundled with this sample book to see more.
+My core interest is in applying entity linking to \emph{clinical notes}, unstructured text that can be found in large quantities in electronic health records (EHR). There is a lot of potentially useful information in such notes, ranging from disease mentions, descriptions of symptoms, past medical history, and on and on. While EHR also have large quantities of structured information, it turns out that such information is often incomplete or even mis-leading. Structured data in the EHR are mostly collected either in direct support of patient care, or for billing purposes -- they are not typically collected to perform secondary analyses such as investigating disease progression, responses to treatment, etc. For example, billing for a medical visit requires the medical facility to submit an ICD-10 code (for diagnosis), and a CPT code (for procedure). But such codes will be issued even for things like \emph{testing} for a particular condition, and if the test is negative, we certainly can't take the ICD-10 code as a true statement about the condition of a patient. Clinical notes often contain a more direct assessment of a patient's condition, and is typically the only place where information like medical symptoms and past medical history is stored.
+
+There are two highly salient background facts relevant to clinical NLP. First, there is general lack of labelled data. Due to privacy concerns and regulations (prominently, HIPAA), there is not much in the way of shared corpora, much less annotated shared corpora. Second, there is an abundance of knowledge bases, some of which have existed for decades. For example, the Unified Medical Language System (UMLS; \cite{bodenreider_unified_2004}), created by the National Library of Medicine, contains millions of clinically relevant entities, linked into a semantic network. My goal for this literature review is to identify resources that can help with entity linking in the clinical domain, given these two background facts. I would like to be able to do high quality entity linking without much in the way of annotated gold standards, leveraging what little is available to link mentions in clinical notes to resources such as the UMLS.
 
 ```{tableofcontents}
 ```
