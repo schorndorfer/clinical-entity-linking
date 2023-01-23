@@ -1,56 +1,636 @@
----
----
 
-@inproceedings{holdgraf_evidence_2014,
-	address = {Brisbane, Australia, Australia},
-	title = {Evidence for {Predictive} {Coding} in {Human} {Auditory} {Cortex}},
-	booktitle = {International {Conference} on {Cognitive} {Neuroscience}},
-	publisher = {Frontiers in Neuroscience},
-	author = {Holdgraf, Christopher Ramsay and de Heer, Wendy and Pasley, Brian N. and Knight, Robert T.},
-	year = {2014}
-}
-
-@article{holdgraf_rapid_2016,
-	title = {Rapid tuning shifts in human auditory cortex enhance speech intelligibility},
-	volume = {7},
-	issn = {2041-1723},
-	url = {http://www.nature.com/doifinder/10.1038/ncomms13654},
-	doi = {10.1038/ncomms13654},
-	number = {May},
-	journal = {Nature Communications},
-	author = {Holdgraf, Christopher Ramsay and de Heer, Wendy and Pasley, Brian N. and Rieger, Jochem W. and Crone, Nathan and Lin, Jack J. and Knight, Robert T. and Theunissen, Frédéric E.},
+@article{johnson_mimic-iii_2016,
+	title = {{MIMIC}-{III}, a freely accessible critical care database},
+	volume = {3},
+	issn = {2052-4463},
+	url = {http://www.nature.com/articles/sdata201635},
+	doi = {10.1038/sdata.2016.35},
+	language = {en},
+	number = {1},
+	urldate = {2019-10-10},
+	journal = {Scientific Data},
+	author = {Johnson, Alistair E.W. and Pollard, Tom J. and Shen, Lu and Lehman, Li-wei H. and Feng, Mengling and Ghassemi, Mohammad and Moody, Benjamin and Szolovits, Peter and Anthony Celi, Leo and Mark, Roger G.},
+	month = dec,
 	year = {2016},
-	pages = {13654},
-	file = {Holdgraf et al. - 2016 - Rapid tuning shifts in human auditory cortex enhance speech intelligibility.pdf:C\:\\Users\\chold\\Zotero\\storage\\MDQP3JWE\\Holdgraf et al. - 2016 - Rapid tuning shifts in human auditory cortex enhance speech intelligibility.pdf:application/pdf}
+	pages = {160035},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\BT3PS6GF\\Johnson et al. - 2016 - MIMIC-III, a freely accessible critical care datab.pdf:application/pdf},
 }
 
-@inproceedings{holdgraf_portable_2017,
-	title = {Portable learning environments for hands-on computational instruction using container-and cloud-based technology to teach data science},
-	volume = {Part F1287},
-	isbn = {978-1-4503-5272-7},
-	doi = {10.1145/3093338.3093370},
-	abstract = {© 2017 ACM. There is an increasing interest in learning outside of the traditional classroom setting. This is especially true for topics covering computational tools and data science, as both are challenging to incorporate in the standard curriculum. These atypical learning environments offer new opportunities for teaching, particularly when it comes to combining conceptual knowledge with hands-on experience/expertise with methods and skills. Advances in cloud computing and containerized environments provide an attractive opportunity to improve the effciency and ease with which students can learn. This manuscript details recent advances towards using commonly-Available cloud computing services and advanced cyberinfrastructure support for improving the learning experience in bootcamp-style events. We cover the benets (and challenges) of using a server hosted remotely instead of relying on student laptops, discuss the technology that was used in order to make this possible, and give suggestions for how others could implement and improve upon this model for pedagogy and reproducibility.},
-	booktitle = {{ACM} {International} {Conference} {Proceeding} {Series}},
-	author = {Holdgraf, Christopher Ramsay and Culich, A. and Rokem, A. and Deniz, F. and Alegro, M. and Ushizima, D.},
+@inproceedings{schumacher_clinical_2020,
+	address = {Online},
+	title = {Clinical {Concept} {Linking} with {Contextualized} {Neural} {Representations}},
+	url = {https://www.aclweb.org/anthology/2020.acl-main.760},
+	doi = {10.18653/v1/2020.acl-main.760},
+	language = {en},
+	urldate = {2022-10-04},
+	booktitle = {Proceedings of the 58th {Annual} {Meeting} of the {Association} for {Computational} {Linguistics}},
+	publisher = {Association for Computational Linguistics},
+	author = {Schumacher, Elliot and Mulyar, Andriy and Dredze, Mark},
+	year = {2020},
+	pages = {8585--8592},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\YY98RK5F\\Schumacher et al. - 2020 - Clinical Concept Linking with Contextualized Neura.pdf:application/pdf},
+}
+
+@misc{dong_ontology-based_2022,
+	title = {Ontology-{Based} and {Weakly} {Supervised} {Rare} {Disease} {Phenotyping} from {Clinical} {Notes}},
+	url = {http://arxiv.org/abs/2205.05656},
+	abstract = {Computational text phenotyping is the practice of identifying patients with certain disorders and traits from clinical notes. Rare diseases are challenging to be identified due to few cases available for machine learning and the need for data annotation from domain experts. We propose a method using ontologies and weak supervision, with recent pre-trained contextual representations from Bi-directional Transformers (e.g. BERT). The ontology-based framework includes two steps: (i) Text-to-UMLS, extracting phenotypes by contextually linking mentions to concepts in Unified Medical Language System (UMLS), with a Named Entity Recognition and Linking (NER+L) tool, SemEHR, and weak supervision with customised rules and contextual mention representation; (ii) UMLS-to-ORDO, matching UMLS concepts to rare diseases in Orphanet Rare Disease Ontology (ORDO). The weakly supervised approach is proposed to learn a phenotype confirmation model to improve Text-to-UMLS linking, without annotated data from domain experts. We evaluated the approach on three clinical datasets, MIMIC-III discharge summaries, MIMIC-III radiology reports, and NHS Tayside brain imaging reports from two institutions in the US and the UK, with annotations. Our best weakly supervised method achieved 81.4\% precision and 91.4\% recall on extracting rare disease UMLS phenotypes from the annotated MIMIC-III discharge summaries. Results on radiology reports from MIMIC-III and NHS Tayside were consistent with the discharge summaries. The overall pipeline processing clinical notes can extract rare disease cases, mostly uncaptured in structured data (manually assigned ICD codes). We discuss the usefulness of the weak supervision approach and propose directions for future studies.},
+	urldate = {2022-10-04},
+	publisher = {arXiv},
+	author = {Dong, Hang and Suárez-Paniagua, Víctor and Zhang, Huayu and Wang, Minhong and Casey, Arlene and Davidson, Emma and Chen, Jiaoyan and Alex, Beatrice and Whiteley, William and Wu, Honghan},
+	month = sep,
+	year = {2022},
+	note = {arXiv:2205.05656 [cs]},
+	keywords = {Computer Science - Computation and Language, 68T50 (Primary), 68T30 (Secondary), I.2.7, J.3},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\2JEPHNQP\\Dong et al. - 2022 - Ontology-Based and Weakly Supervised Rare Disease .pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\I2MMM5L6\\2205.html:text/html},
+}
+
+@misc{de_cao_autoregressive_2021,
+	title = {Autoregressive {Entity} {Retrieval}},
+	url = {http://arxiv.org/abs/2010.00904},
+	abstract = {Entities are at the center of how we represent and aggregate knowledge. For instance, Encyclopedias such as Wikipedia are structured by entities (e.g., one per Wikipedia article). The ability to retrieve such entities given a query is fundamental for knowledge-intensive tasks such as entity linking and open-domain question answering. Current approaches can be understood as classifiers among atomic labels, one for each entity. Their weight vectors are dense entity representations produced by encoding entity meta information such as their descriptions. This approach has several shortcomings: (i) context and entity affinity is mainly captured through a vector dot product, potentially missing fine-grained interactions; (ii) a large memory footprint is needed to store dense representations when considering large entity sets; (iii) an appropriately hard set of negative data has to be subsampled at training time. In this work, we propose GENRE, the first system that retrieves entities by generating their unique names, left to right, token-by-token in an autoregressive fashion. This mitigates the aforementioned technical issues since: (i) the autoregressive formulation directly captures relations between context and entity name, effectively cross encoding both; (ii) the memory footprint is greatly reduced because the parameters of our encoder-decoder architecture scale with vocabulary size, not entity count; (iii) the softmax loss is computed without subsampling negative data. We experiment with more than 20 datasets on entity disambiguation, end-to-end entity linking and document retrieval tasks, achieving new state-of-the-art or very competitive results while using a tiny fraction of the memory footprint of competing systems. Finally, we demonstrate that new entities can be added by simply specifying their names. Code and pre-trained models at https://github.com/facebookresearch/GENRE.},
+	urldate = {2022-10-04},
+	publisher = {arXiv},
+	author = {De Cao, Nicola and Izacard, Gautier and Riedel, Sebastian and Petroni, Fabio},
+	month = mar,
+	year = {2021},
+	note = {arXiv:2010.00904 [cs, stat]},
+	keywords = {Computer Science - Computation and Language, Statistics - Machine Learning, Computer Science - Machine Learning, Computer Science - Information Retrieval},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\J55IZ3SJ\\De Cao et al. - 2021 - Autoregressive Entity Retrieval.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\65J96GAA\\2010.html:text/html},
+}
+
+@misc{huang_clinicalbert_2020,
+	title = {{ClinicalBERT}: {Modeling} {Clinical} {Notes} and {Predicting} {Hospital} {Readmission}},
+	shorttitle = {{ClinicalBERT}},
+	url = {http://arxiv.org/abs/1904.05342},
+	abstract = {Clinical notes contain information about patients that goes beyond structured data like lab values and medications. However, clinical notes have been underused relative to structured data, because notes are high-dimensional and sparse. This work develops and evaluates representations of clinical notes using bidirectional transformers (ClinicalBERT). ClinicalBERT uncovers high-quality relationships between medical concepts as judged by humans. ClinicalBert outperforms baselines on 30-day hospital readmission prediction using both discharge summaries and the first few days of notes in the intensive care unit. Code and model parameters are available.},
+	urldate = {2022-10-04},
+	publisher = {arXiv},
+	author = {Huang, Kexin and Altosaar, Jaan and Ranganath, Rajesh},
+	month = nov,
+	year = {2020},
+	note = {arXiv:1904.05342 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\GGKCNTB2\\Huang et al. - 2020 - ClinicalBERT Modeling Clinical Notes and Predicti.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\QXNMG87D\\1904.html:text/html},
+}
+
+@article{sevgili_neural_2022,
+	title = {Neural {Entity} {Linking}: {A} {Survey} of {Models} {Based} on {Deep} {Learning}},
+	volume = {13},
+	issn = {22104968, 15700844},
+	shorttitle = {Neural {Entity} {Linking}},
+	url = {http://arxiv.org/abs/2006.00575},
+	doi = {10.3233/SW-222986},
+	abstract = {This survey presents a comprehensive description of recent neural entity linking (EL) systems developed since 2015 as a result of the "deep learning revolution" in natural language processing. Its goal is to systemize design features of neural entity linking systems and compare their performance to the remarkable classic methods on common benchmarks. This work distills a generic architecture of a neural EL system and discusses its components, such as candidate generation, mention-context encoding, and entity ranking, summarizing prominent methods for each of them. The vast variety of modifications of this general architecture are grouped by several common themes: joint entity mention detection and disambiguation, models for global linking, domain-independent techniques including zero-shot and distant supervision methods, and cross-lingual approaches. Since many neural models take advantage of entity and mention/context embeddings to represent their meaning, this work also overviews prominent entity embedding techniques. Finally, the survey touches on applications of entity linking, focusing on the recently emerged use-case of enhancing deep pre-trained masked language models based on the Transformer architecture.},
+	number = {3},
+	urldate = {2022-10-04},
+	journal = {Semantic Web},
+	author = {Sevgili, Ozge and Shelmanov, Artem and Arkhipov, Mikhail and Panchenko, Alexander and Biemann, Chris},
+	month = apr,
+	year = {2022},
+	note = {arXiv:2006.00575 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	pages = {527--570},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\GDIXUIA7\\Sevgili et al. - 2022 - Neural Entity Linking A Survey of Models Based on.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\ZCY7FZCY\\2006.html:text/html},
+}
+
+@misc{du_entity_2022,
+	title = {Entity {Tagging}: {Extracting} {Entities} in {Text} {Without} {Mention} {Supervision}},
+	shorttitle = {Entity {Tagging}},
+	url = {http://arxiv.org/abs/2209.06148},
+	abstract = {Detection and disambiguation of all entities in text is a crucial task for a wide range of applications. The typical formulation of the problem involves two stages: detect mention boundaries and link all mentions to a knowledge base. For a long time, mention detection has been considered as a necessary step for extracting all entities in a piece of text, even if the information about mention spans is ignored by some downstream applications that merely focus on the set of extracted entities. In this paper we show that, in such cases, detection of mention boundaries does not bring any considerable performance gain in extracting entities, and therefore can be skipped. To conduct our analysis, we propose an "Entity Tagging" formulation of the problem, where models are evaluated purely on the set of extracted entities without considering mentions. We compare a state-of-the-art mention-aware entity linking solution against GET, a mention-agnostic sequence-to-sequence model that simply outputs a list of disambiguated entities given an input context. We find that these models achieve comparable performance when trained both on a fully and partially annotated dataset across multiple benchmarks, demonstrating that GET can extract disambiguated entities with strong performance without explicit mention boundaries supervision.},
+	urldate = {2022-10-04},
+	publisher = {arXiv},
+	author = {Du, Christina and Popat, Kashyap and Martin, Louis and Petroni, Fabio},
+	month = sep,
+	year = {2022},
+	note = {arXiv:2209.06148 [cs]},
+	keywords = {Computer Science - Information Retrieval},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\W9ARKZC2\\Du et al. - 2022 - Entity Tagging Extracting Entities in Text Withou.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\HK6ZYV9J\\2209.html:text/html},
+}
+
+@inproceedings{lin_entitybert_2021,
+	address = {Online},
+	title = {{EntityBERT}: {Entity}-centric {Masking} {Strategy} for {Model} {Pretraining} for the {Clinical} {Domain}},
+	shorttitle = {{EntityBERT}},
+	url = {https://www.aclweb.org/anthology/2021.bionlp-1.21},
+	doi = {10.18653/v1/2021.bionlp-1.21},
+	language = {en},
+	urldate = {2022-10-04},
+	booktitle = {Proceedings of the 20th {Workshop} on {Biomedical} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Lin, Chen and Miller, Timothy and Dligach, Dmitriy and Bethard, Steven and Savova, Guergana},
+	year = {2021},
+	pages = {191--201},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\XSERIJNR\\Lin et al. - 2021 - EntityBERT Entity-centric Masking Strategy for Mo.pdf:application/pdf},
+}
+
+@misc{li_effective_2022,
+	title = {Effective {Few}-{Shot} {Named} {Entity} {Linking} by {Meta}-{Learning}},
+	url = {http://arxiv.org/abs/2207.05280},
+	abstract = {Entity linking aims to link ambiguous mentions to their corresponding entities in a knowledge base, which is significant and fundamental for various downstream applications, e.g., knowledge base completion, question answering, and information extraction. While great efforts have been devoted to this task, most of these studies follow the assumption that large-scale labeled data is available. However, when the labeled data is insufficient for specific domains due to labor-intensive annotation work, the performance of existing algorithms will suffer an intolerable decline. In this paper, we endeavor to solve the problem of few-shot entity linking, which only requires a minimal amount of in-domain labeled data and is more practical in real situations. Specifically, we firstly propose a novel weak supervision strategy to generate non-trivial synthetic entity-mention pairs based on mention rewriting. Since the quality of the synthetic data has a critical impact on effective model training, we further design a meta-learning mechanism to assign different weights to each synthetic entity-mention pair automatically. Through this way, we can profoundly exploit rich and precious semantic information to derive a well-trained entity linking model under the few-shot setting. The experiments on real-world datasets show that the proposed method can extensively improve the state-of-the-art few-shot entity linking model and achieve impressive performance when only a small amount of labeled data is available. Moreover, we also demonstrate the outstanding ability of the model's transferability.},
+	urldate = {2022-10-04},
+	publisher = {arXiv},
+	author = {Li, Xiuxing and Li, Zhenyu and Zhang, Zhengyan and Liu, Ning and Yuan, Haitao and Zhang, Wei and Liu, Zhiyuan and Wang, Jianyong},
+	month = jul,
+	year = {2022},
+	note = {arXiv:2207.05280 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\N4X7AXMY\\Li et al. - 2022 - Effective Few-Shot Named Entity Linking by Meta-Le.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\IZ73JB59\\2207.html:text/html},
+}
+
+@article{shen_entity_2015,
+	title = {Entity {Linking} with a {Knowledge} {Base}: {Issues}, {Techniques}, and {Solutions}},
+	volume = {27},
+	issn = {1041-4347},
+	shorttitle = {Entity {Linking} with a {Knowledge} {Base}},
+	url = {http://ieeexplore.ieee.org/document/6823700/},
+	doi = {10.1109/TKDE.2014.2327028},
+	number = {2},
+	urldate = {2022-10-04},
+	journal = {IEEE Transactions on Knowledge and Data Engineering},
+	author = {Shen, Wei and Wang, Jianyong and Han, Jiawei},
+	month = feb,
+	year = {2015},
+	pages = {443--460},
+}
+
+@misc{logeswaran_zero-shot_2019,
+	title = {Zero-{Shot} {Entity} {Linking} by {Reading} {Entity} {Descriptions}},
+	url = {http://arxiv.org/abs/1906.07348},
+	abstract = {We present the zero-shot entity linking task, where mentions must be linked to unseen entities without in-domain labeled data. The goal is to enable robust transfer to highly specialized domains, and so no metadata or alias tables are assumed. In this setting, entities are only identified by text descriptions, and models must rely strictly on language understanding to resolve the new entities. First, we show that strong reading comprehension models pre-trained on large unlabeled data can be used to generalize to unseen entities. Second, we propose a simple and effective adaptive pre-training strategy, which we term domain-adaptive pre-training (DAP), to address the domain shift problem associated with linking unseen entities in a new domain. We present experiments on a new dataset that we construct for this task and show that DAP improves over strong pre-training baselines, including BERT. The data and code are available at https://github.com/lajanugen/zeshel.},
+	urldate = {2022-10-04},
+	publisher = {arXiv},
+	author = {Logeswaran, Lajanugen and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina and Devlin, Jacob and Lee, Honglak},
+	month = jun,
+	year = {2019},
+	note = {arXiv:1906.07348 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\QHEL7IFQ\\Logeswaran et al. - 2019 - Zero-Shot Entity Linking by Reading Entity Descrip.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\CZHY9KYB\\1906.html:text/html},
+}
+
+@inproceedings{wang_language_2015,
+	address = {Lisbon, Portugal},
+	title = {Language and {Domain} {Independent} {Entity} {Linking} with {Quantified} {Collective} {Validation}},
+	url = {http://aclweb.org/anthology/D15-1081},
+	doi = {10.18653/v1/D15-1081},
+	language = {en},
+	urldate = {2022-10-04},
+	booktitle = {Proceedings of the 2015 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	author = {Wang, Han and Zheng, Jin Guang and Ma, Xiaogang and Fox, Peter and Ji, Heng},
+	year = {2015},
+	pages = {695--704},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\EYJI9HCN\\Wang et al. - 2015 - Language and Domain Independent Entity Linking wit.pdf:application/pdf},
+}
+
+@incollection{jose_medlinker_2020,
+	address = {Cham},
+	title = {{MedLinker}: {Medical} {Entity} {Linking} with {Neural} {Representations} and {Dictionary} {Matching}},
+	volume = {12036},
+	isbn = {978-3-030-45441-8 978-3-030-45442-5},
+	shorttitle = {{MedLinker}},
+	url = {http://link.springer.com/10.1007/978-3-030-45442-5_29},
+	language = {en},
+	urldate = {2022-10-04},
+	booktitle = {Advances in {Information} {Retrieval}},
+	publisher = {Springer International Publishing},
+	author = {Loureiro, Daniel and Jorge, Alípio Mário},
+	editor = {Jose, Joemon M. and Yilmaz, Emine and Magalhães, João and Castells, Pablo and Ferro, Nicola and Silva, Mário J. and Martins, Flávio},
+	year = {2020},
+	doi = {10.1007/978-3-030-45442-5_29},
+	note = {Series Title: Lecture Notes in Computer Science},
+	pages = {230--237},
+}
+
+@misc{johnson_alistair_mimic-iii_2015,
+	title = {{MIMIC}-{III} {Clinical} {Database}},
+	url = {https://physionet.org/content/mimiciii/1.4/},
+	abstract = {MIMIC-III is a large, freely-available database comprising deidentified
+health-related data associated with over forty thousand patients who stayed in
+critical care units of the Beth Israel Deaconess Medical Center between 2001
+and 2012. The database includes information such as demographics, vital sign
+measurements made at the bedside ({\textasciitilde}1 data point per hour), laboratory test
+results, procedures, medications, caregiver notes, imaging reports, and
+mortality (including post-hospital discharge).
+
+MIMIC supports a diverse range of analytic studies spanning epidemiology,
+clinical decision-rule improvement, and electronic tool development. It is
+notable for three factors: it is freely available to researchers worldwide; it
+encompasses a diverse and very large population of ICU patients; and it
+contains highly granular data, including vital signs, laboratory results, and
+medications.},
+	urldate = {2022-10-04},
+	publisher = {PhysioNet},
+	author = {Johnson, Alistair and Pollard, Tom and Mark, Roger},
+	year = {2015},
+	doi = {10.13026/C2XW26},
+	note = {Version Number: 1.4
+Type: dataset},
+}
+
+@article{bodenreider_unified_2004,
+	title = {The {Unified} {Medical} {Language} {System} ({UMLS}): integrating biomedical terminology},
+	volume = {32},
+	issn = {1362-4962},
+	shorttitle = {The {Unified} {Medical} {Language} {System} ({UMLS})},
+	url = {https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkh061},
+	doi = {10.1093/nar/gkh061},
+	language = {en},
+	number = {90001},
+	urldate = {2022-10-05},
+	journal = {Nucleic Acids Research},
+	author = {Bodenreider, O.},
+	month = jan,
+	year = {2004},
+	pages = {267D--270},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\GQTET3V4\\Bodenreider - 2004 - The Unified Medical Language System (UMLS) integr.pdf:application/pdf},
+}
+
+@misc{wu_scalable_2020,
+	title = {Scalable {Zero}-shot {Entity} {Linking} with {Dense} {Entity} {Retrieval}},
+	url = {http://arxiv.org/abs/1911.03814},
+	abstract = {This paper introduces a conceptually simple, scalable, and highly effective BERT-based entity linking model, along with an extensive evaluation of its accuracy-speed trade-off. We present a two-stage zero-shot linking algorithm, where each entity is defined only by a short textual description. The first stage does retrieval in a dense space defined by a bi-encoder that independently embeds the mention context and the entity descriptions. Each candidate is then re-ranked with a cross-encoder, that concatenates the mention and entity text. Experiments demonstrate that this approach is state of the art on recent zero-shot benchmarks (6 point absolute gains) and also on more established non-zero-shot evaluations (e.g. TACKBP-2010), despite its relative simplicity (e.g. no explicit entity embeddings or manually engineered mention tables). We also show that bi-encoder linking is very fast with nearest neighbour search (e.g. linking with 5.9 million candidates in 2 milliseconds), and that much of the accuracy gain from the more expensive cross-encoder can be transferred to the bi-encoder via knowledge distillation. Our code and models are available at https://github.com/facebookresearch/BLINK.},
+	urldate = {2022-10-06},
+	publisher = {arXiv},
+	author = {Wu, Ledell and Petroni, Fabio and Josifoski, Martin and Riedel, Sebastian and Zettlemoyer, Luke},
+	month = sep,
+	year = {2020},
+	note = {arXiv:1911.03814 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\N5TM3LTV\\Wu et al. - 2020 - Scalable Zero-shot Entity Linking with Dense Entit.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\V6758NHE\\1911.html:text/html},
+}
+
+@misc{shivade_mednli_2017,
+	title = {{MedNLI} — {A} {Natural} {Language} {Inference} {Dataset} {For} {The} {Clinical} {Domain}},
+	url = {https://physionet.org/content/mednli/},
+	urldate = {2022-10-06},
+	publisher = {physionet.org},
+	author = {Shivade, Chaitanya},
 	year = {2017},
-	keywords = {Teaching, Bootcamps, Cloud computing, Data science, Docker, Pedagogy}
+	doi = {10.13026/C2RS98},
+	note = {Type: dataset},
 }
 
-@article{holdgraf_encoding_2017,
-	title = {Encoding and decoding models in cognitive electrophysiology},
-	volume = {11},
-	issn = {16625137},
-	doi = {10.3389/fnsys.2017.00061},
-	abstract = {© 2017 Holdgraf, Rieger, Micheli, Martin, Knight and Theunissen. Cognitive neuroscience has seen rapid growth in the size and complexity of data recorded from the human brain as well as in the computational tools available to analyze this data. This data explosion has resulted in an increased use of multivariate, model-based methods for asking neuroscience questions, allowing scientists to investigate multiple hypotheses with a single dataset, to use complex, time-varying stimuli, and to study the human brain under more naturalistic conditions. These tools come in the form of “Encoding” models, in which stimulus features are used to model brain activity, and “Decoding” models, in which neural features are used to generated a stimulus output. Here we review the current state of encoding and decoding models in cognitive electrophysiology and provide a practical guide toward conducting experiments and analyses in this emerging field. Our examples focus on using linear models in the study of human language and audition. We show how to calculate auditory receptive fields from natural sounds as well as how to decode neural recordings to predict speech. The paper aims to be a useful tutorial to these approaches, and a practical introduction to using machine learning and applied statistics to build models of neural activity. The data analytic approaches we discuss may also be applied to other sensory modalities, motor systems, and cognitive systems, and we cover some examples in these areas. In addition, a collection of Jupyter notebooks is publicly available as a complement to the material covered in this paper, providing code examples and tutorials for predictive modeling in python. The aimis to provide a practical understanding of predictivemodeling of human brain data and to propose best-practices in conducting these analyses.},
-	journal = {Frontiers in Systems Neuroscience},
-	author = {Holdgraf, Christopher Ramsay and Rieger, J.W. and Micheli, C. and Martin, S. and Knight, R.T. and Theunissen, F.E.},
+@article{goldberger_physiobank_2000,
+	title = {{PhysioBank}, {PhysioToolkit}, and {PhysioNet}: {Components} of a {New} {Research} {Resource} for {Complex} {Physiologic} {Signals}},
+	volume = {101},
+	issn = {0009-7322, 1524-4539},
+	shorttitle = {{PhysioBank}, {PhysioToolkit}, and {PhysioNet}},
+	url = {https://www.ahajournals.org/doi/10.1161/01.CIR.101.23.e215},
+	doi = {10.1161/01.CIR.101.23.e215},
+	abstract = {Abstract
+              —The newly inaugurated Research Resource for Complex Physiologic Signals, which was created under the auspices of the National Center for Research Resources of the National Institutes of Health, is intended to stimulate current research and new investigations in the study of cardiovascular and other complex biomedical signals. The resource has 3 interdependent components. PhysioBank is a large and growing archive of well-characterized digital recordings of physiological signals and related data for use by the biomedical research community. It currently includes databases of multiparameter cardiopulmonary, neural, and other biomedical signals from healthy subjects and from patients with a variety of conditions with major public health implications, including life-threatening arrhythmias, congestive heart failure, sleep apnea, neurological disorders, and aging. PhysioToolkit is a library of open-source software for physiological signal processing and analysis, the detection of physiologically significant events using both classic techniques and novel methods based on statistical physics and nonlinear dynamics, the interactive display and characterization of signals, the creation of new databases, the simulation of physiological and other signals, the quantitative evaluation and comparison of analysis methods, and the analysis of nonstationary processes. PhysioNet is an on-line forum for the dissemination and exchange of recorded biomedical signals and open-source software for analyzing them. It provides facilities for the cooperative analysis of data and the evaluation of proposed new algorithms. In addition to providing free electronic access to PhysioBank data and PhysioToolkit software via the World Wide Web (http://www.physionet.org), PhysioNet offers services and training via on-line tutorials to assist users with varying levels of expertise.},
+	language = {en},
+	number = {23},
+	urldate = {2022-10-06},
+	journal = {Circulation},
+	author = {Goldberger, Ary L. and Amaral, Luis A. N. and Glass, Leon and Hausdorff, Jeffrey M. and Ivanov, Plamen Ch. and Mark, Roger G. and Mietus, Joseph E. and Moody, George B. and Peng, Chung-Kang and Stanley, H. Eugene},
+	month = jun,
+	year = {2000},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\SISY4V9T\\Goldberger et al. - 2000 - PhysioBank, PhysioToolkit, and PhysioNet Componen.pdf:application/pdf},
+}
+
+@article{kraljevic_multi-domain_2021,
+	title = {Multi-domain clinical natural language processing with {MedCAT}: {The} {Medical} {Concept} {Annotation} {Toolkit}},
+	volume = {117},
+	issn = {09333657},
+	shorttitle = {Multi-domain clinical natural language processing with {MedCAT}},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0933365721000762},
+	doi = {10.1016/j.artmed.2021.102083},
+	language = {en},
+	urldate = {2022-10-07},
+	journal = {Artificial Intelligence in Medicine},
+	author = {Kraljevic, Zeljko and Searle, Thomas and Shek, Anthony and Roguski, Lukasz and Noor, Kawsar and Bean, Daniel and Mascio, Aurelie and Zhu, Leilei and Folarin, Amos A. and Roberts, Angus and Bendayan, Rebecca and Richardson, Mark P. and Stewart, Robert and Shah, Anoop D. and Wong, Wai Keong and Ibrahim, Zina and Teo, James T. and Dobson, Richard J.B.},
+	month = jul,
+	year = {2021},
+	pages = {102083},
+	file = {Submitted Version:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\UX4KVMC9\\Kraljevic et al. - 2021 - Multi-domain clinical natural language processing .pdf:application/pdf},
+}
+
+@misc{zhang_knowledge-rich_2022,
+	title = {Knowledge-{Rich} {Self}-{Supervision} for {Biomedical} {Entity} {Linking}},
+	url = {http://arxiv.org/abs/2112.07887},
+	abstract = {Entity linking faces significant challenges such as prolific variations and prevalent ambiguities, especially in high-value domains with myriad entities. Standard classification approaches suffer from the annotation bottleneck and cannot effectively handle unseen entities. Zero-shot entity linking has emerged as a promising direction for generalizing to new entities, but it still requires example gold entity mentions during training and canonical descriptions for all entities, both of which are rarely available outside of Wikipedia. In this paper, we explore Knowledge-RIch Self-Supervision (\${\textbackslash}tt KRISS\$) for biomedical entity linking, by leveraging readily available domain knowledge. In training, it generates self-supervised mention examples on unlabeled text using a domain ontology and trains a contextual encoder using contrastive learning. For inference, it samples self-supervised mentions as prototypes for each entity and conducts linking by mapping the test mention to the most similar prototype. Our approach can easily incorporate entity descriptions and gold mention labels if available. We conducted extensive experiments on seven standard datasets spanning biomedical literature and clinical notes. Without using any labeled information, our method produces \${\textbackslash}tt KRISSBERT\$, a universal entity linker for four million UMLS entities that attains new state of the art, outperforming prior self-supervised methods by as much as 20 absolute points in accuracy.},
+	urldate = {2022-10-17},
+	publisher = {arXiv},
+	author = {Zhang, Sheng and Cheng, Hao and Vashishth, Shikhar and Wong, Cliff and Xiao, Jinfeng and Liu, Xiaodong and Naumann, Tristan and Gao, Jianfeng and Poon, Hoifung},
+	month = may,
+	year = {2022},
+	note = {arXiv:2112.07887 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\2U8QM732\\Zhang et al. - 2022 - Knowledge-Rich Self-Supervision for Biomedical Ent.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\IZVLARQ3\\2112.html:text/html},
+}
+
+@article{krishnan_self-supervised_2022,
+	title = {Self-supervised learning in medicine and healthcare},
+	issn = {2157-846X},
+	url = {https://www.nature.com/articles/s41551-022-00914-1},
+	doi = {10.1038/s41551-022-00914-1},
+	language = {en},
+	urldate = {2022-10-18},
+	journal = {Nature Biomedical Engineering},
+	author = {Krishnan, Rayan and Rajpurkar, Pranav and Topol, Eric J.},
+	month = aug,
+	year = {2022},
+}
+
+@inproceedings{angell_clustering-based_2021,
+	address = {Online},
+	title = {Clustering-based {Inference} for {Biomedical} {Entity} {Linking}},
+	url = {https://aclanthology.org/2021.naacl-main.205},
+	doi = {10.18653/v1/2021.naacl-main.205},
+	language = {en},
+	urldate = {2022-10-19},
+	booktitle = {Proceedings of the 2021 {Conference} of the {North} {American} {Chapter} of the {Association} for {Computational} {Linguistics}: {Human} {Language} {Technologies}},
+	publisher = {Association for Computational Linguistics},
+	author = {Angell, Rico and Monath, Nicholas and Mohan, Sunil and Yadav, Nishant and McCallum, Andrew},
+	year = {2021},
+	pages = {2598--2608},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\4H39KUQQ\\Angell et al. - 2021 - Clustering-based Inference for Biomedical Entity L.pdf:application/pdf},
+}
+
+@article{gu_domain-specific_2022,
+	title = {Domain-{Specific} {Language} {Model} {Pretraining} for {Biomedical} {Natural} {Language} {Processing}},
+	volume = {3},
+	issn = {2691-1957, 2637-8051},
+	url = {http://arxiv.org/abs/2007.15779},
+	doi = {10.1145/3458754},
+	abstract = {Pretraining large neural language models, such as BERT, has led to impressive gains on many natural language processing (NLP) tasks. However, most pretraining efforts focus on general domain corpora, such as newswire and Web. A prevailing assumption is that even domain-specific pretraining can benefit by starting from general-domain language models. In this paper, we challenge this assumption by showing that for domains with abundant unlabeled text, such as biomedicine, pretraining language models from scratch results in substantial gains over continual pretraining of general-domain language models. To facilitate this investigation, we compile a comprehensive biomedical NLP benchmark from publicly-available datasets. Our experiments show that domain-specific pretraining serves as a solid foundation for a wide range of biomedical NLP tasks, leading to new state-of-the-art results across the board. Further, in conducting a thorough evaluation of modeling choices, both for pretraining and task-specific fine-tuning, we discover that some common practices are unnecessary with BERT models, such as using complex tagging schemes in named entity recognition (NER). To help accelerate research in biomedical NLP, we have released our state-of-the-art pretrained and task-specific models for the community, and created a leaderboard featuring our BLURB benchmark (short for Biomedical Language Understanding \& Reasoning Benchmark) at https://aka.ms/BLURB.},
+	number = {1},
+	urldate = {2022-10-19},
+	journal = {ACM Transactions on Computing for Healthcare},
+	author = {Gu, Yu and Tinn, Robert and Cheng, Hao and Lucas, Michael and Usuyama, Naoto and Liu, Xiaodong and Naumann, Tristan and Gao, Jianfeng and Poon, Hoifung},
+	month = jan,
+	year = {2022},
+	note = {arXiv:2007.15779 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	pages = {1--23},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\6Z6A6HF2\\Gu et al. - 2022 - Domain-Specific Language Model Pretraining for Bio.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\EYWG2GX3\\2007.html:text/html},
+}
+
+@misc{moseley_edward_phenotype_nodate,
+	title = {Phenotype {Annotations} for {Patient} {Notes} in the {MIMIC}-{III} {Database}},
+	url = {https://physionet.org/content/phenotype-annotations-mimic/1.20.03/},
+	abstract = {A crucial step within secondary analysis of electronic health records (EHRs)
+is to identify the patient cohort under investigation. While EHRs contain
+medical billing codes that aim to represent the conditions and treatments
+patients may have, much of the information is only present in the patient
+notes. Therefore, it is critical to develop robust algorithms to infer
+patients' conditions and treatments from their written notes.
+
+We introduce a dataset for patient phenotyping, a task that is defined as the
+identification whether a patient has a given phenotype (also referred to as
+indication) based on their patient note. Patient notes of MIMIC-III, a dataset
+collected from Intensive Care Units of a large tertiary care hospital in
+Boston, were manually annotated for the presence of several high-context
+phenotypes relevant to treatment and risk of re-hospitalization.
+
+Each note has been annotated by two expert human annotators (one clinical
+researcher and one resident physician). Annotated phenotypes include treatment
+non-adherence, chronic pain, advanced/metastatic cancer, as well as 10 other
+phenotypes. This dataset can be utilized for academic and industrial research
+in medicine and computer science, particularly within the field of medical
+natural language processing.},
+	urldate = {2022-10-19},
+	publisher = {PhysioNet},
+	author = {Moseley, Edward and Celi, Leo Anthony and Wu, Joy and Dernoncourt, Franck},
+	doi = {10.13026/TXMT-8M40},
+	note = {Type: dataset},
+}
+
+@article{gehrmann_comparing_2018,
+	title = {Comparing deep learning and concept extraction based methods for patient phenotyping from clinical narratives},
+	volume = {13},
+	issn = {1932-6203},
+	url = {https://dx.plos.org/10.1371/journal.pone.0192360},
+	doi = {10.1371/journal.pone.0192360},
+	language = {en},
+	number = {2},
+	urldate = {2022-10-19},
+	journal = {PLOS ONE},
+	author = {Gehrmann, Sebastian and Dernoncourt, Franck and Li, Yeran and Carlson, Eric T. and Wu, Joy T. and Welt, Jonathan and Foote, John and Moseley, Edward T. and Grant, David W. and Tyler, Patrick D. and Celi, Leo A.},
+	editor = {Chuang, Jen-Hsiang},
+	month = feb,
+	year = {2018},
+	pages = {e0192360},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\R9HRNSDY\\Gehrmann et al. - 2018 - Comparing deep learning and concept extraction bas.pdf:application/pdf},
+}
+
+@misc{mohan_medmentions_2019,
+	title = {{MedMentions}: {A} {Large} {Biomedical} {Corpus} {Annotated} with {UMLS} {Concepts}},
+	shorttitle = {{MedMentions}},
+	url = {http://arxiv.org/abs/1902.09476},
+	abstract = {This paper presents the formal release of MedMentions, a new manually annotated resource for the recognition of biomedical concepts. What distinguishes MedMentions from other annotated biomedical corpora is its size (over 4,000 abstracts and over 350,000 linked mentions), as well as the size of the concept ontology (over 3 million concepts from UMLS 2017) and its broad coverage of biomedical disciplines. In addition to the full corpus, a sub-corpus of MedMentions is also presented, comprising annotations for a subset of UMLS 2017 targeted towards document retrieval. To encourage research in Biomedical Named Entity Recognition and Linking, data splits for training and testing are included in the release, and a baseline model and its metrics for entity linking are also described.},
+	urldate = {2022-10-19},
+	publisher = {arXiv},
+	author = {Mohan, Sunil and Li, Donghui},
+	month = feb,
+	year = {2019},
+	note = {arXiv:1902.09476 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\T3SWGIDQ\\Mohan and Li - 2019 - MedMentions A Large Biomedical Corpus Annotated w.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\PHL5SVPL\\1902.html:text/html},
+}
+
+@misc{jain_saahil_radgraph_nodate,
+	title = {{RadGraph}: {Extracting} {Clinical} {Entities} and {Relations} from {Radiology} {Reports}},
+	shorttitle = {{RadGraph}},
+	url = {https://physionet.org/content/radgraph/1.0.0/},
+	abstract = {RadGraph is a dataset of entities and relations in full-text radiology
+reports. We designed a novel information extraction (IE) schema to structure
+clinical information in a radiology report with four entities and three
+relations. Our train set consists of 500 MIMIC-CXR radiology reports annotated
+according to our schema by board-certified radiologists. Our test set consists
+of 50 MIMIC-CXR and 50 CheXpert reports, which are independently annotated by
+two board-certified radiologists. Additionally, we release annotations
+generated by a benchmark deep learning model that achieves a micro F1 of 0.82
+(MIMIC-CXR test set) and 0.73 (CheXpert test set) on an evaluation metric for
+end-to-end relation extraction, where entity boundaries, entity types, and
+relation type must be correct. We use our model to automatically generate
+entity and relation labels across 220,763 MIMIC-CXR  reports and 500 CheXpert
+reports, where annotations can be mapped to associated chest radiographs in
+the MIMIC-CXR and CheXpert datasets respectively. The dataset, which includes
+reports, entities, and relations, is de-identified according to the US Health
+Insurance Portability Act (HIPAA). This dataset is intended to support the
+development of natural language processing (NLP) methods for entity and
+relation extraction in radiology as well as enable multi-modal use cases that
+can leverage entities, relations, and associated radiographs.},
+	urldate = {2022-10-19},
+	publisher = {PhysioNet},
+	author = {Jain, Saahil and Agrawal, Ashwin and Saporta, Adriel and Truong, Steven QH and Nguyen Duong, Du and Bui, Tan and Chambon, Pierre and Lungren, Matthew and Ng, Andrew and Langlotz, Curtis and Rajpurkar, Pranav},
+	doi = {10.13026/HM87-5P47},
+	note = {Version Number: 1.0.0
+Type: dataset},
+}
+
+@article{vashishth_improving_2021,
+	title = {Improving broad-coverage medical entity linking with semantic type prediction and large-scale datasets},
+	volume = {121},
+	issn = {1532-0480},
+	doi = {10.1016/j.jbi.2021.103880},
+	abstract = {OBJECTIVES: Biomedical natural language processing tools are increasingly being applied for broad-coverage information extraction-extracting medical information of all types in a scientific document or a clinical note. In such broad-coverage settings, linking mentions of medical concepts to standardized vocabularies requires choosing the best candidate concepts from large inventories covering dozens of types. This study presents a novel semantic type prediction module for biomedical NLP pipelines and two automatically-constructed, large-scale datasets with broad coverage of semantic types.
+METHODS: We experiment with five off-the-shelf biomedical NLP toolkits on four benchmark datasets for medical information extraction from scientific literature and clinical notes. All toolkits adopt a staged approach of mention detection followed by two stages of medical entity linking: (1) generating a list of candidate concepts, and (2) picking the best concept among them. We introduce a semantic type prediction module to alleviate the problem of overgeneration of candidate concepts by filtering out irrelevant candidate concepts based on the predicted semantic type of a mention. We present MedType, a fully modular semantic type prediction model which we integrate into the existing NLP toolkits. To address the dearth of broad-coverage training data for medical information extraction, we further present WikiMed and PubMedDS, two large-scale datasets for medical entity linking.
+RESULTS: Semantic type filtering improves medical entity linking performance across all toolkits and datasets, often by several percentage points of F-1. Further, pretraining MedType on our novel datasets achieves state-of-the-art performance for semantic type prediction in biomedical text.
+CONCLUSIONS: Semantic type prediction is a key part of building accurate NLP pipelines for broad-coverage information extraction from biomedical text. We make our source code and novel datasets publicly available to foster reproducible research.},
+	language = {eng},
+	journal = {Journal of Biomedical Informatics},
+	author = {Vashishth, Shikhar and Newman-Griffis, Denis and Joshi, Rishabh and Dutt, Ritam and Rosé, Carolyn P.},
+	month = sep,
+	year = {2021},
+	pmid = {34390853},
+	pmcid = {PMC8952339},
+	keywords = {Natural Language Processing, Semantics, Information Storage and Retrieval, Distant supervision, Entity typing, Information extraction, Medical concept normalization, Medical entity linking, Natural language processing, Software},
+	pages = {103880},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\LE7927NV\\Vashishth et al. - 2021 - Improving broad-coverage medical entity linking wi.pdf:application/pdf},
+}
+
+@article{dogan_ncbi_2014,
+	title = {{NCBI} disease corpus: {A} resource for disease name recognition and concept normalization},
+	volume = {47},
+	issn = {15320464},
+	shorttitle = {{NCBI} disease corpus},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S1532046413001974},
+	doi = {10.1016/j.jbi.2013.12.006},
+	language = {en},
+	urldate = {2022-10-19},
+	journal = {Journal of Biomedical Informatics},
+	author = {Doğan, Rezarta Islamaj and Leaman, Robert and Lu, Zhiyong},
+	month = feb,
+	year = {2014},
+	pages = {1--10},
+	file = {Full Text:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\T8IPGQSC\\Doğan et al. - 2014 - NCBI disease corpus A resource for disease name r.pdf:application/pdf},
+}
+
+@misc{savova_guergana_analysis_nodate,
+	title = {Analysis of {Clinical} {Text}: {Task} 14 of {SemEval} 2015},
+	shorttitle = {Analysis of {Clinical} {Text}},
+	url = {https://physionet.org/content/semeval2015/2.0/},
+	abstract = {SemEval (Semantic Evaluation) is an ongoing series of evaluations of
+computational semantic analysis systems, organized under the umbrella of
+SIGLEX, the Special Interest Group on the Lexicon of the Association for
+Computational Linguistics. This project describes "Analysis of Clinical Text"
+task of the International Workshop on Semantic Evaluation 2014 and 2015
+(SemEval 2014 and 2015) [2,3,4,5]. The purpose of the task is to enhance
+current research in natural language processing (NLP) methods used in the
+clinical domain, and to introduce clinical text processing to the broader NLP
+community. The task aims to combine supervised methods for text analysis with
+unsupervised approaches for entity/acronym/abbreviation recognition and
+mapping to Unified Medical Language System (UMLS) Concept Unique Identifiers
+(CUIs). It also evaluated systems on the task of template filling [1], which
+involves the population of eight attributes of the identified disorders with
+their normalized values.},
+	urldate = {2022-10-19},
+	publisher = {PhysioNet},
+	author = {Savova, Guergana},
+	doi = {10.13026/61RG-Q298},
+	note = {Version Number: 2.0
+Type: dataset},
+}
+
+@inproceedings{pradhan_semeval-2014_2014,
+	address = {Dublin, Ireland},
+	title = {{SemEval}-2014 {Task} 7: {Analysis} of {Clinical} {Text}},
+	shorttitle = {{SemEval}-2014 {Task} 7},
+	url = {http://aclweb.org/anthology/S14-2007},
+	doi = {10.3115/v1/S14-2007},
+	language = {en},
+	urldate = {2022-10-19},
+	booktitle = {Proceedings of the 8th {International} {Workshop} on {Semantic} {Evaluation} ({SemEval} 2014)},
+	publisher = {Association for Computational Linguistics},
+	author = {Pradhan, Sameer and Elhadad, Noémie and Chapman, Wendy and Manandhar, Suresh and Savova, Guergana},
+	year = {2014},
+	pages = {54--62},
+	file = {Submitted Version:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\DTJNGVBE\\Pradhan et al. - 2014 - SemEval-2014 Task 7 Analysis of Clinical Text.pdf:application/pdf},
+}
+
+@misc{yasunaga_deep_2022,
+	title = {Deep {Bidirectional} {Language}-{Knowledge} {Graph} {Pretraining}},
+	url = {http://arxiv.org/abs/2210.09338},
+	abstract = {Pretraining a language model (LM) on text has been shown to help various downstream NLP tasks. Recent works show that a knowledge graph (KG) can complement text data, offering structured background knowledge that provides a useful scaffold for reasoning. However, these works are not pretrained to learn a deep fusion of the two modalities at scale, limiting the potential to acquire fully joint representations of text and KG. Here we propose DRAGON (Deep Bidirectional Language-Knowledge Graph Pretraining), a self-supervised approach to pretraining a deeply joint language-knowledge foundation model from text and KG at scale. Specifically, our model takes pairs of text segments and relevant KG subgraphs as input and bidirectionally fuses information from both modalities. We pretrain this model by unifying two self-supervised reasoning tasks, masked language modeling and KG link prediction. DRAGON outperforms existing LM and LM+KG models on diverse downstream tasks including question answering across general and biomedical domains, with +5\% absolute gain on average. In particular, DRAGON achieves notable performance on complex reasoning about language and knowledge (+10\% on questions involving long contexts or multi-step reasoning) and low-resource QA (+8\% on OBQA and RiddleSense), and new state-of-the-art results on various BioNLP tasks. Our code and trained models are available at https://github.com/michiyasunaga/dragon.},
+	urldate = {2022-10-19},
+	publisher = {arXiv},
+	author = {Yasunaga, Michihiro and Bosselut, Antoine and Ren, Hongyu and Zhang, Xikun and Manning, Christopher D. and Liang, Percy and Leskovec, Jure},
+	month = oct,
+	year = {2022},
+	note = {arXiv:2210.09338 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Machine Learning, Computer Science - Artificial Intelligence},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\8H3TUXPR\\Yasunaga et al. - 2022 - Deep Bidirectional Language-Knowledge Graph Pretra.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\KQINQ3FA\\2210.html:text/html},
+}
+
+@misc{oord_representation_2019,
+	title = {Representation {Learning} with {Contrastive} {Predictive} {Coding}},
+	url = {http://arxiv.org/abs/1807.03748},
+	abstract = {While supervised learning has enabled great progress in many applications, unsupervised learning has not seen such widespread adoption, and remains an important and challenging endeavor for artificial intelligence. In this work, we propose a universal unsupervised learning approach to extract useful representations from high-dimensional data, which we call Contrastive Predictive Coding. The key insight of our model is to learn such representations by predicting the future in latent space by using powerful autoregressive models. We use a probabilistic contrastive loss which induces the latent space to capture information that is maximally useful to predict future samples. It also makes the model tractable by using negative sampling. While most prior work has focused on evaluating representations for a particular modality, we demonstrate that our approach is able to learn useful representations achieving strong performance on four distinct domains: speech, images, text and reinforcement learning in 3D environments.},
+	urldate = {2022-10-19},
+	publisher = {arXiv},
+	author = {Oord, Aaron van den and Li, Yazhe and Vinyals, Oriol},
+	month = jan,
+	year = {2019},
+	note = {arXiv:1807.03748 [cs, stat]},
+	keywords = {Statistics - Machine Learning, Computer Science - Machine Learning},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\73TYQJ9I\\Oord et al. - 2019 - Representation Learning with Contrastive Predictiv.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\CRX7JRVV\\1807.html:text/html},
+}
+
+@article{johnson_billion-scale_2017,
+	title = {Billion-scale similarity search with {GPUs}},
+	copyright = {arXiv.org perpetual, non-exclusive license},
+	url = {https://arxiv.org/abs/1702.08734},
+	doi = {10.48550/ARXIV.1702.08734},
+	abstract = {Similarity search finds application in specialized database systems handling complex data such as images or videos, which are typically represented by high-dimensional features and require specific indexing structures. This paper tackles the problem of better utilizing GPUs for this task. While GPUs excel at data-parallel tasks, prior approaches are bottlenecked by algorithms that expose less parallelism, such as k-min selection, or make poor use of the memory hierarchy. We propose a design for k-selection that operates at up to 55\% of theoretical peak performance, enabling a nearest neighbor implementation that is 8.5x faster than prior GPU state of the art. We apply it in different similarity search scenarios, by proposing optimized design for brute-force, approximate and compressed-domain search based on product quantization. In all these setups, we outperform the state of the art by large margins. Our implementation enables the construction of a high accuracy k-NN graph on 95 million images from the Yfcc100M dataset in 35 minutes, and of a graph connecting 1 billion vectors in less than 12 hours on 4 Maxwell Titan X GPUs. We have open-sourced our approach for the sake of comparison and reproducibility.},
+	urldate = {2022-10-19},
+	author = {Johnson, Jeff and Douze, Matthijs and Jégou, Hervé},
 	year = {2017},
-	keywords = {Decoding models, Encoding models, Electrocorticography (ECoG), Electrophysiology/evoked potentials, Machine learning applied to neuroscience, Natural stimuli, Predictive modeling, Tutorials}
+	note = {Publisher: arXiv
+Version Number: 1},
+	keywords = {FOS: Computer and information sciences, Computer Vision and Pattern Recognition (cs.CV), Data Structures and Algorithms (cs.DS), Databases (cs.DB), Information Retrieval (cs.IR)},
 }
 
-@book{ruby,
-  title     = {The Ruby Programming Language},
-  author    = {Flanagan, David and Matsumoto, Yukihiro},
-  year      = {2008},
-  publisher = {O'Reilly Media}
+@inproceedings{soldaini_quickumls_2016,
+	address = {Pisa, Italy},
+	title = {{QuickUMLS}: a {Fast}, {Unsupervised} {Approach} for {Medical} {Concept} {Extraction}},
+	author = {Soldaini, Luca and Goharian, Nazli},
+	year = {2016},
+}
+
+@article{khattab_colbert_2020,
+	title = {{ColBERT}: {Efficient} and {Effective} {Passage} {Search} via {Contextualized} {Late} {Interaction} over {BERT}},
+	copyright = {arXiv.org perpetual, non-exclusive license},
+	shorttitle = {{ColBERT}},
+	url = {https://arxiv.org/abs/2004.12832},
+	doi = {10.48550/ARXIV.2004.12832},
+	abstract = {Recent progress in Natural Language Understanding (NLU) is driving fast-paced advances in Information Retrieval (IR), largely owed to fine-tuning deep language models (LMs) for document ranking. While remarkably effective, the ranking models based on these LMs increase computational cost by orders of magnitude over prior approaches, particularly as they must feed each query-document pair through a massive neural network to compute a single relevance score. To tackle this, we present ColBERT, a novel ranking model that adapts deep LMs (in particular, BERT) for efficient retrieval. ColBERT introduces a late interaction architecture that independently encodes the query and the document using BERT and then employs a cheap yet powerful interaction step that models their fine-grained similarity. By delaying and yet retaining this fine-granular interaction, ColBERT can leverage the expressiveness of deep LMs while simultaneously gaining the ability to pre-compute document representations offline, considerably speeding up query processing. Beyond reducing the cost of re-ranking the documents retrieved by a traditional model, ColBERT's pruning-friendly interaction mechanism enables leveraging vector-similarity indexes for end-to-end retrieval directly from a large document collection. We extensively evaluate ColBERT using two recent passage search datasets. Results show that ColBERT's effectiveness is competitive with existing BERT-based models (and outperforms every non-BERT baseline), while executing two orders-of-magnitude faster and requiring four orders-of-magnitude fewer FLOPs per query.},
+	urldate = {2022-10-28},
+	author = {Khattab, Omar and Zaharia, Matei},
+	year = {2020},
+	note = {Publisher: arXiv
+Version Number: 2},
+	keywords = {Computation and Language (cs.CL), FOS: Computer and information sciences, Information Retrieval (cs.IR)},
+}
+
+@misc{agrawal_large_2022,
+	title = {Large {Language} {Models} are {Few}-{Shot} {Clinical} {Information} {Extractors}},
+	url = {http://arxiv.org/abs/2205.12689},
+	abstract = {A long-running goal of the clinical NLP community is the extraction of important variables trapped in clinical notes. However, roadblocks have included dataset shift from the general domain and a lack of public clinical corpora and annotations. In this work, we show that large language models, such as InstructGPT, perform well at zero- and few-shot information extraction from clinical text despite not being trained specifically for the clinical domain. Whereas text classification and generation performance have already been studied extensively in such models, here we additionally demonstrate how to leverage them to tackle a diverse set of NLP tasks which require more structured outputs, including span identification, token-level sequence classification, and relation extraction. Further, due to the dearth of available data to evaluate these systems, we introduce new datasets for benchmarking few-shot clinical information extraction based on a manual re-annotation of the CASI dataset for new tasks. On the clinical extraction tasks we studied, the GPT-3 systems significantly outperform existing zero- and few-shot baselines.},
+	urldate = {2022-12-01},
+	publisher = {arXiv},
+	author = {Agrawal, Monica and Hegselmann, Stefan and Lang, Hunter and Kim, Yoon and Sontag, David},
+	month = nov,
+	year = {2022},
+	note = {arXiv:2205.12689 [cs]},
+	keywords = {Computer Science - Computation and Language, Computer Science - Artificial Intelligence},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\RUMV4BQI\\Agrawal et al. - 2022 - Large Language Models are Few-Shot Clinical Inform.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\ZCP6CBXA\\2205.html:text/html},
+}
+
+@misc{singhal_large_2022,
+	title = {Large {Language} {Models} {Encode} {Clinical} {Knowledge}},
+	url = {http://arxiv.org/abs/2212.13138},
+	abstract = {Large language models (LLMs) have demonstrated impressive capabilities in natural language understanding and generation, but the quality bar for medical and clinical applications is high. Today, attempts to assess models' clinical knowledge typically rely on automated evaluations on limited benchmarks. There is no standard to evaluate model predictions and reasoning across a breadth of tasks. To address this, we present MultiMedQA, a benchmark combining six existing open question answering datasets spanning professional medical exams, research, and consumer queries; and HealthSearchQA, a new free-response dataset of medical questions searched online. We propose a framework for human evaluation of model answers along multiple axes including factuality, precision, possible harm, and bias. In addition, we evaluate PaLM (a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM, on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA, MedMCQA, PubMedQA, MMLU clinical topics), including 67.6\% accuracy on MedQA (US Medical License Exam questions), surpassing prior state-of-the-art by over 17\%. However, human evaluation reveals key gaps in Flan-PaLM responses. To resolve this we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains inferior to clinicians. We show that comprehension, recall of knowledge, and medical reasoning improve with model scale and instruction prompt tuning, suggesting the potential utility of LLMs in medicine. Our human evaluations reveal important limitations of today's models, reinforcing the importance of both evaluation frameworks and method development in creating safe, helpful LLM models for clinical applications.},
+	urldate = {2023-01-03},
+	publisher = {arXiv},
+	author = {Singhal, Karan and Azizi, Shekoofeh and Tu, Tao and Mahdavi, S. Sara and Wei, Jason and Chung, Hyung Won and Scales, Nathan and Tanwani, Ajay and Cole-Lewis, Heather and Pfohl, Stephen and Payne, Perry and Seneviratne, Martin and Gamble, Paul and Kelly, Chris and Scharli, Nathaneal and Chowdhery, Aakanksha and Mansfield, Philip and Arcas, Blaise Aguera y and Webster, Dale and Corrado, Greg S. and Matias, Yossi and Chou, Katherine and Gottweis, Juraj and Tomasev, Nenad and Liu, Yun and Rajkomar, Alvin and Barral, Joelle and Semturs, Christopher and Karthikesalingam, Alan and Natarajan, Vivek},
+	month = dec,
+	year = {2022},
+	note = {arXiv:2212.13138 [cs]},
+	keywords = {Computer Science - Computation and Language},
+	file = {arXiv Fulltext PDF:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\CZY38GSN\\Singhal et al. - 2022 - Large Language Models Encode Clinical Knowledge.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\wkthompson\\OneDrive - Northwestern University\\WKT\\References\\storage\\WIZK89JK\\2212.html:text/html},
 }
