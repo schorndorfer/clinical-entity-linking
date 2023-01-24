@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Introduction &#8212; Entity Linking for Clinical Notes</title>
+    <title>Zero Shot Entity Linking &#8212; Entity Linking for Clinical Notes</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="MIMIC-III" href="mimic-notes.html" />
+    <link rel="next" title="Experiments" href="experiments.html" />
+    <link rel="prev" title="Radiology Notes" href="radiology-notes.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -106,13 +107,13 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Introduction
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="mimic-notes.html">
    MIMIC-III
@@ -128,8 +129,8 @@ const thebe_selector_output = ".output, .cell_output"
    Radiology Notes
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="zero-shot-entity-linking.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Zero Shot Entity Linking
   </a>
  </li>
@@ -233,7 +234,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/schorndorfer/clinical-entity-linking.git/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/schorndorfer/clinical-entity-linking.git/issues/new?title=Issue%20on%20page%20%2Fzero-shot-entity-linking.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -261,7 +262,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/intro.md"
+        <a href="_sources/zero-shot-entity-linking.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -310,7 +311,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Introduction</h1>
+                <h1>Zero Shot Entity Linking</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -322,21 +323,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
-<p>The task of <a class="reference external" href="https://en.wikipedia.org/wiki/Entity_linking">entity linking</a> is to link entity mentions in text to specific identifiers from a knowledge base. To perform entity linking, two sub-tasks are normally required: (1) predicting named entity mentions in text, (2) linking those entity mentions to entities in a knowledge base. It appears to be common to assume that (1) is given, and evaluate a system on (2) alone. Overall performance, however, is clearly dependent on doing well in both steps.</p>
-<p>My core interest is in applying entity linking to <em>clinical notes</em>, unstructured text that can be found in large quantities in electronic health records (EHR). There is a lot of potentially useful information in such notes, ranging from disease mentions, descriptions of symptoms, past medical history, and on and on. While EHR also have large quantities of structured information, it turns out that such information is often incomplete or even mis-leading. Structured data in the EHR are mostly collected either in direct support of patient care, or for billing purposes – they are not typically collected to perform secondary analyses such as investigating disease progression, responses to treatment, etc. For example, billing for a medical visit requires the medical facility to submit an ICD-10 code (for diagnosis), and a CPT code (for procedure). But such codes will be issued even for things like <em>testing</em> for a particular condition, and if the test is negative, we certainly can’t take the ICD-10 code as a true statement about the condition of a patient. Clinical notes often contain a more direct assessment of a patient’s condition, and is typically the only place where information like medical symptoms and past medical history is stored.</p>
-<p>There are two highly salient background facts relevant to clinical NLP. First, there is general lack of labelled data. Due to privacy concerns and regulations (prominently, HIPAA), there is not much in the way of shared corpora, much less annotated shared corpora. Second, there is an abundance of knowledge bases, some of which have existed for decades. For example, the Unified Medical Language System (UMLS; <span id="id1">[<a class="reference internal" href="references.html#id16" title="O. Bodenreider. The Unified Medical Language System (UMLS): integrating biomedical terminology. Nucleic Acids Research, 32(90001):267D–270, January 2004. URL: https://academic.oup.com/nar/article-lookup/doi/10.1093/nar/gkh061 (visited on 2022-10-05), doi:10.1093/nar/gkh061.">Bod04</a>]</span>), created by the National Library of Medicine, contains millions of clinically relevant entities, linked into a semantic network. My goal for this literature review is to identify resources that can help with entity linking in the clinical domain, given these two background facts. I would like to be able to do high quality entity linking without much in the way of annotated gold standards, leveraging what little is available to link mentions in clinical notes to resources such as the UMLS.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="mimic-notes.html">MIMIC-III</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pathology-notes.html">Pathology Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="radiology-notes.html">Radiology Notes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="zero-shot-entity-linking.html">Zero Shot Entity Linking</a></li>
-<li class="toctree-l1"><a class="reference internal" href="experiments.html">Experiments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
-</ul>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="zero-shot-entity-linking">
+<h1>Zero Shot Entity Linking<a class="headerlink" href="#zero-shot-entity-linking" title="Permalink to this headline">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
@@ -366,10 +354,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="mimic-notes.html" title="next page">
+    <a class='left-prev' id="prev-link" href="radiology-notes.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Radiology Notes</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="experiments.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">MIMIC-III</p>
+        <p class="prev-next-title">Experiments</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
