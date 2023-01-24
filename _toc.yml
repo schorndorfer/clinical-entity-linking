@@ -4,9 +4,9 @@
 format: jb-book
 root: intro
 chapters:
+- file: recent-approaches
 - file: mimic-notes
 - file: pathology-notes
 - file: radiology-notes
-- file: zero-shot-entity-linking
 - file: experiments
 - file: references
