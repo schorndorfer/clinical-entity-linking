@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Recent Approaches &#8212; Entity Linking for Clinical Notes</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MIMIC-III" href="mimic-notes.html" />
+    <link rel="prev" title="Introduction" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Entity Linking for Clinical Notes</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Recent Approaches
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mimic-notes.html">
+   MIMIC-III
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pathology-notes.html">
+   Pathology Notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="radiology-notes.html">
+   Radiology Notes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="experiments.html">
+   Experiments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="references.html">
+   References
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/schorndorfer/clinical-entity-linking.git"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/schorndorfer/clinical-entity-linking.git/issues/new?title=Issue%20on%20page%20%2Frecent-approaches.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/recent-approaches.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Recent Approaches</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="recent-approaches">
+<h1>Recent Approaches<a class="headerlink" href="#recent-approaches" title="Permalink to this headline">#</a></h1>
+<p>\subsection{\cite{schumacher_clinical_2020}: \citetitle{schumacher_clinical_2020}}</p>
+<p>\begin{figure}
+\centering
+\includegraphics[scale=0.5]{clinical-concept-linking-fig-1}
+\caption{from \cite{schumacher_clinical_2020}}
+\label{fig:concept-linker}
+\end{figure}</p>
+<p>\subsubsection{Problem}</p>
+<p>This paper motivates the task of \emph{concept linking}, which they describe as adjacent to (but not quite the same thing as) \emph{entity linking}. The primary distinction is that concept linking lacks the descriptive content that entity linking typically takes advantage of. Concepts come with identifiers, links to synonyms and related concepts, but rarely long-form text. This is relevant in the clinical space because this is what characterizes the ontologies/terminologies that are typically available here. Therefore, concept linking relies on (1) local context from the mention, and (2) whatever information is available in the ontology. This is unlike something like Wikipedia, where each page can be taken as an extensive long-form description of a particular entity. The authors also describe the lack of annotated data in the clinical space, due to the issues outlined in the introduction of this literature review. Their approach is informed by these resource limitations.</p>
+<p>\subsubsection{Approach}</p>
+<p>The concept linker described in the paper consists of a pairwise neural network ranker using contextualized  representations for both the mentions and the concepts. For a given entity mention and document, the ranker ranks all possible candidate concepts in the knowledge base. Training is done with pairwise loss, with two networks, one which takes the mention and the correct concept, and another which takes the mention and an incorrect concept  (see Figure \ref{fig:concept-linker}). The contextualized representations use an RNN approach (ELMo), trained on clinical notes from the MIMIC 3 note corpus. Mention representations are extracted as the lowest token representation from the LSTM. Concept representations are trained on the concept names. The model is pre-trained on all concept names, synonyms, and definitions from the UMLS for the relevant subset of the UMLS for which they have annotated data. The annotated data is from a shared evaluation task (ShARe/CLEF eHealth Evaluation Lab 2013 Task), which made use of MIMIC 2.5 clinical notes, annotated with UMLS disorder concepts.</p>
+<p>\subsection{\cite{dong_ontology-based_2022}: \citetitle{dong_ontology-based_2022}}</p>
+<p>\subsubsection{Problem}</p>
+<p>The authors address the issue of extracting rare disease entities from clinical text. Rare diseases are those affecting <span class="math notranslate nohighlight">\(\leq 5\)</span> people in <span class="math notranslate nohighlight">\(10,000\)</span>. While each such disease is (by definition) rare, there are many such diseases, therefore having a rare disease is not exactly rare. There are very few annotated resources for such conditions (a common refrain for clinical NLP in general), which is the essential challenge the authors are trying to overcome. They also discuss mapping between two ontologies (from UMLS to ORDO), but this latter concern is out of focus for this literature review, and I’ll focus on the entity linking portion of the paper.</p>
+<p>\subsubsection{Approach}</p>
+<p>The core ideas are to use weak supervision combined with contextualized mention representations (BERT). They use a rules based method to generate relatively high quality mention/entity pairs, which can be used to then train a classifier over contextualized representations. The rules consist of string matching to concepts in the UMLS ontology, followed by a filtering step to remove many false positives. One filtering rule, for example, is to exclude mentions that are “too short”, as such mentions are frequently highly ambiguous. The training data was derived from discharge summaries in the MIMIC 3 corpus. A smaller set of notes was hand annotated to produce a gold standard for evaluation purposes. For the contextual language model, they used a pre-trained BERT model trained on clinical notes.</p>
+<p>\subsection{\cite{logeswaran_zero-shot_2019}: \citetitle{logeswaran_zero-shot_2019}}</p>
+<p>\subsubsection{Problem}</p>
+<p>Zero-shot entity linking: linking mentions to unseen entities without in-domain labeled data. An example they give, is linking to specialized dictionaries such as legal cases, company project descriptions, characters in a novel. Labeled data probably not readily available, and it is expensive to create such resources. The goal of the paper is to build an entity linking system that can generalize to new domains without labeled training data.</p>
+<p>\subsubsection{Approach}</p>
+<p>They outline three contributions in the paper:</p>
+<p>\begin{enumerate}
+\item Proposing a new zero-shot entity linking task, and constructing a public dataset for this task using documents from Wikia.
+\item Building a strong baseline with a BERT-based reading comprehension model, with attention layers on concatenated mentions in context + entity descriptions
+\item An adaptation strategy they call \emph{domain adaptive pre-training} (DAP) that further improves entity linking performance.
+\end{enumerate}</p>
+<p>They drop the normal assumptions of entity linking approaches, and assume only the weaker assumption that we have an \emph{entity dictionary} <span class="math notranslate nohighlight">\(\mathcal{E} = \{(e_i,d_i)\}_{i = 1,...,K}\)</span> where each <span class="math notranslate nohighlight">\(d_i\)</span> is a text description of entity <span class="math notranslate nohighlight">\(e_i\)</span>. They assume the presence of labeled data for training, including documents with labeled mentions, and gold standard entities attached. There is no such assumption for the target data, just an entity dictionary as described above. They adopt a 2-stage pipeline for entity linking. First is a fast candidate generation stage, followed by a more expensive BERT-based candidate ranking stage. Candidate generation uses an information retrieval approach, using BM25 to pull out the top-k (k = 64 in their experiments) to pull out candidate mentions from texts. Candidate ranking is done with a transformer model which concatenates the candidate mention text with the entity descriptions. They refer to this as the \emph{Full Transformer} model. Their final step is to use DAP, as mentioned above. They pre-train the model on text first on open corpora (Wikipedia and BookCorpus for this experiment), followed by source and target text, followed by just target text, before training on the labeled source data. Compared to baselines, the best performance on unlabeled target data was achieved using Full Transformer + DAP. Evaluation metric was average top-1 accuracy.</p>
+<p>\subsection{\cite{wu_scalable_2020}: \citetitle{wu_scalable_2020}}</p>
+<p>\begin{figure}
+\centering
+\includegraphics[scale=0.33]{zero-shot-fig-1}
+\caption{from \cite{wu_scalable_2020}}
+\label{fig:zero-shot}
+\end{figure}</p>
+<p>\subsubsection{Problem}</p>
+<p>This paper develops zero-shot entity linking further, following \cite{logeswaran_zero-shot_2019}.  The zero-shot problem statement is the same as above, but they add the additional goals of scalable candidate generation using a BERT-based dense encoding model.</p>
+<p>\subsubsection{Approach}</p>
+<p>The standard assumption is made that entity mentions come pre-annotated. They then follow \cite{logeswaran_zero-shot_2019} in adopting a two stage approach (see Figure \ref{fig:zero-shot}). The entity mentions and entities each get encoded into the same dense vector space using . Dot-product similarity is then used to find the top-k candidate entities for a given entity mention. A crossencoder is used to rank the candidates. Again similar to \cite{logeswaran_zero-shot_2019}, the crossencoder is given concatenated representations – the entity mention is concatenated with the candidate entity representation.</p>
+<p>\subsection{\cite{du_entity_2022}: \citetitle{du_entity_2022}}</p>
+<p>\begin{figure}
+\centering
+\includegraphics[scale=0.5]{entity-tagging-fig-1}
+\caption{from \cite{du_entity_2022}}
+\label{fig:entity-tagging}
+\end{figure}</p>
+<p>\subsubsection{Problem}</p>
+<p>What if we could do entity linking without entity mention detection? Do we really need to bother with that first step? There are lots of applications where we just need the entities identified, no need to demarcate the precise strings of text where they are evoked. Instead of a 2 stage pipeline, the authors attempt to create a direct mapping from text to entities (see Figure \ref{fig:entity-tagging}).</p>
+<p>\subsubsection{Approach}</p>
+<p>Framing \emph{entity tagging} as a sequence-to-sequence problem, the propose an autoregressive model that generates a set of entity names given an input sequence (GET: \emph{Generative Entity Tagging}). Training setup consists of a input text and a corresponding set of gold entities, concatenated in random order. The model is trained to optimize the probability of the output sequence (the concatenated set of entities). (Note: I don’t really understand what the point of the random permutation is. If I end up making use of ideas from this paper, this is an area I’ll have to delve into more deeply). At prediction time, the model chooses the most likely next token at each decoding step. At the end, this sequence of tokens is split by the separator token, and then converted into a set of entities. Training data consists of news articles (AIDA dataset), annotated with entities from a knowledge base, as well as Wikipedia articles with partially annotated mentions. Evaluation is performed on AIDA, as well as other corpora. Evaluation metrics are precision, recall, and F1 score vetween the set of ground truth entities and the predicted entities. The GET model is based on pre-trained T5-base architecture and trained with cross entropy loss to maximize the likelihood of the target sequence. The results obtained were as good as (and mostly a bit better than) an existing AIDA-trained entity linking model, demonstrating that labeled entity mentions are not required in order to achieve good performance in predicting entities directly from unlabeled text.</p>
+<p>\section{Discussion}</p>
+<p>\cite{schumacher_clinical_2020} formulates the entity linking task in the context of clinical notes, and the typical resources available in this context. This includes a general lack of high-quality annotated data, but the general availability of large medical ontologies. In this regime, they call the task \emph{concept linking}.  This paper motivates the use of contextual language models for this task, and outlines some of the challenges to applying those other systems to entity linking for clinical notes. It is a useful baseline to compare with some of the other systems described below.</p>
+<p>\cite{dong_ontology-based_2022} motivate the use of weak supervision to create classifier training data. This idea could prove quite useful in the context of the two papers that address \emph{zero shot} entity linking. In particular, \cite{logeswaran_zero-shot_2019} explicitly mentions that adding a weak supervision step would be a potential way to improve on their results. My main take aways from \cite{dong_ontology-based_2022} are some ideas for doing weak supervision in the context of these zero shot approaches. This may turn out to be one of the core innovative steps for my final project.</p>
+<p>\cite{logeswaran_zero-shot_2019} presented a very interesting idea, treating candidate generation as an information retrieval task. I’m hopeful that I can make use of this core idea for my project. One issue, however, is that medical resources such as UMLS do not have much accompanying text (as described in \cite{schumacher_clinical_2020}). It’s not like wikipedia, where each article can be taken as a description of an entity. So this is something that would have to be figured out in order to adapt this idea to the clinical space. Perhaps it would be possible to use the semantic network of UMLS to create an artificial context of clusters of concepts which are likely to co-occur as mentions in a document. This could be an avenue of exploration and experimentation.</p>
+<p>Compared to \cite{logeswaran_zero-shot_2019}, the candidate generation approach in \cite{wu_scalable_2020} resulted in a significant improvement. The first-stage candidate generation using the transformers had much better recall than the BM25 algorithm used in  \cite{logeswaran_zero-shot_2019}, and \cite{wu_scalable_2020} gets much higher accuracy using the same Wikia dataset. \cite{wu_scalable_2020}  therefore appears to be a clear improvement over \cite{logeswaran_zero-shot_2019}. It would be a great experiment to see how much of this can be applied to the clinical entity linking problem.</p>
+<p>The entity tagging idea described in \cite{du_entity_2022} is very intriguing, as it removes any need for mention annotations. I think this would be applicable to many applications of clinical entity linking. Sometimes we just need the entities. For example, we might need to ask if a pathology note asserts the presence of invasive breast cancer. Or if a chest radiograph note indicates that a patient has pneumonia. It doesn’t necessarily matter where in the text that condition is indicated. I remain uncertain how this idea could be married to the zero shot frameworks described above, but will give it some hard thought.</p>
+<p>\section{Future Work}</p>
+<p>Combining my thoughts from the previous sections, there are several tasks that need to be done.</p>
+<p>\begin{enumerate}
+\item First, I need a corpus of clinical notes. I currently have access to the MIMIC 3 note dataset, which required proper human subjects training. Physionet (the organization that distributes this dataset) also makes available some other corpora, including a collection of radiology notes. I will be looking closely at these to see which might be the most useful for this project. I will certainly need some annotated data for training and testing! Another option is to use biomedical literature data – the \emph{MedMentions} corpus consists of a collection of biomedical paper abstracts annotated with UMLS concepts. While not clinical notes, this might be one way to try out approaches on a related set of data.
+\item Obtain and set up the UMLS ontology. It is quite large, with millions of concepts. I have the required account with the National Library of Medicine already, but this will need some work to figure out how to extract the information I will need, such as concept names, descriptions, and links to synonyms and other concepts.
+\item Set up a baseline system. My current thought is to start with \cite{wu_scalable_2020}. They have open sources their code on github (\url{<a class="reference external" href="https://github.com/facebookresearch/BLINK">https://github.com/facebookresearch/BLINK</a>}). Getting this working will take some effort. Then translating it to the clinical/UMLS world will take some effort.
+\item Implement an innovative step. I’m thinking of trying out ColBERT for information retrieval of candidate entities, as well as using weak supervision to improve performance in a target domain.
+\end{enumerate}</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="mimic-notes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">MIMIC-III</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Will Thompson<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
